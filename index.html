@@ -8,8 +8,51 @@
     <title>AI Recipe Generator</title>
   </head>
   <body>
-    <h1>Recipe Generator</h1>
-    <p>Discover recipes based on your ingredients!</p>
+    <header>
+      <h1>Recipe Generator</h1>
+      <p>Discover recipes based on your ingredients!</p>
+    </header>
+    <main>
+      <form>
+        <h3>Ingredients</h3>
+        <input
+          type="text"
+          placeholder="chicken, spinach, garlic"
+          autofocus
+          required
+          autocomplete="off"
+        />
+        <br />
+        <button>Suggest Ingredients for Me</button>
+      </form>
+      <label for="diet">Dietary Preference</label>
+      <select id="diet" name="diet">
+        <option value="none">No Preference</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="low-carb">Low Carb</option>
+        <option value="keto">Keto</option>
+        <option value="gluten-free">Gluten-free</option>
+        <option value="diary-free">Diary-Free</option>
+        <option value="high-protein">High Protein</option>
+        <option value="halal">Halal</option>
+        <option value="kosher">Kosher</option>
+      </select>
+
+      <label for="meal">Meal Type</label>
+      <select id="meal" name="meal">
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+        <option value="snack">Snack</option>
+        <option value="dessert">Dessert</option>
+        <option value="appetizer">Appetizer</option>
+        <option value="smoothie">Smoothie</option>
+        <option value="soup">Soup</option>
+      </select>
+      <button onclick="generateRecipe()">Generate Recipe</button>
+      <div id="result"></div>
+    </main>
     <footer>
       This AI project is coded by
       <a href="https://github.com/" target="_blank"> Blessing Orisaleye </a> and
