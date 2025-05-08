@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    109.6deg,
+    rgb(20, 30, 48) 11.2%,
+    rgb(36, 59, 85) 91.1%
+  );
+  color: #e7eaf6;
+  padding: 100px;
+}
+
+a {
+  color: #e7eaf6;
+  font-style: italic;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+
+  border-radius: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #e7eaf6;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.result {
+  margin-top: 30px;
+}
